@@ -11,3 +11,10 @@ umur = 19;
 let isAnime: boolean;
 isAnime = true;
 isAnime = false;
+
+// any
+let heroes: any = "iron man";
+heroes = 5;
+heroes = false;
+heroes = [];
+heroes = {};
