@@ -22,6 +22,9 @@ class Admin extends User {
         this._email = "";
         this.phone = phone;
     }
+    static getNameRole() {
+        return "Hey";
+    }
     getRole() {
         return {
             read: this.read,
@@ -35,10 +38,6 @@ class Admin extends User {
         return this._email;
     }
 }
-let admin = new Admin("08212345678", "Adam", 25);
-admin.getName();
-admin.getRole();
-admin.setName("Hori");
-admin.phone;
-admin.email = "rizky@gmail.com";
-console.log(admin.email);
+Admin.getRoleName = "Admin";
+let admin = Admin.getNameRole();
+console.log(admin);
