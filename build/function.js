@@ -20,3 +20,8 @@ console.log(result);
 const add = (val1, val2) => {
     return val1 + val2;
 };
+// default parameter
+const fullName = (first, last = "Azhara") => {
+    return first + " " + last;
+};
+console.log(fullName("Rizky"));
