@@ -40,3 +40,11 @@ const fullName = (first: string, last: string = "Azhara"): string => {
 };
 
 console.log(fullName("Rizky"));
+
+// optional parameter
+
+const getUmur = (val1: string, val2?: string): string => {
+  return val1 + " " + val2;
+};
+
+console.log(getUmur("a"));
