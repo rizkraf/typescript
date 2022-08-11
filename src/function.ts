@@ -16,7 +16,7 @@ function printName(): void {
 
 printName();
 
-//
+// argument type
 
 function multiply(val1: number, val2: number): number {
   return val1 * val2;
@@ -24,3 +24,11 @@ function multiply(val1: number, val2: number): number {
 
 const result = multiply(20, 5);
 console.log(result);
+
+// function as type
+
+type Tambah = (val1: number, val2: number) => number;
+
+const add: Tambah = (val1: number, val2: number): number => {
+  return val1 + val2;
+};
