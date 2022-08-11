@@ -18,3 +18,8 @@ heroes = 5;
 heroes = false;
 heroes = [];
 heroes = {};
+
+// union type
+let phone: number | string;
+phone = 62821234567;
+phone = "0891234567";
